@@ -7,8 +7,18 @@
 Start with an nmap scan to identify open ports and services.
 
 ```bash
-nmap -sV -sC <target_ip>
+nmap -sV -sC -oN <Target File to save> <target_ip>
 ```
+Example:
+```bash
+nmap -sV -sC -oN scans/initial.txt 10.145.181.166
+```
+
+| Flag  | Purpose                                   |
+| ----- | ----------------------------------------- |
+| `-sC` | default scripts (basic vuln/recon checks) |
+| `-sV` | detect service versions                   |
+| `-oN` | save output to file                       |
 
 ## Phase 2: Initial Access
 
