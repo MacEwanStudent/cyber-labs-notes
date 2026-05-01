@@ -106,10 +106,11 @@ sudo -l
 ```
 - Lists allowed sudo commands
 # Execute as Root
+
 ```bash
 sudo ls /root
 sudo less /root/3rd.txt
-```bash
+```
 - Access restricted files
 
 # File Search
